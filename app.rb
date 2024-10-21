@@ -15,9 +15,9 @@ get("/rock") do
 if @comp_move == "rock"
   @outcome = "We tied!"
 elsif @comp_move == "paper"
-  @outcome = "We won!"
+  @outcome = "We lost!"
 else 
-  @outcome =  "We lost!"
+  @outcome =  "We won!"
 end 
 
 erb(:rock)
@@ -34,9 +34,9 @@ get("/scissors") do
   if @comp_move = "rock"
     @outcome = "We lost!"
   elsif @comp_move = "paper"
-    @outcome = "We tied!!"
+    @outcome = "We won!"
   else 
-    @outcome =  "We won!"
+    @outcome =  "We tied!"
   end
 
   erb(:scissors)
